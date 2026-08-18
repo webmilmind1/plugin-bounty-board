@@ -1,0 +1,60 @@
+{
+  "name": "@deskcrew/plugin-bounty-board",
+  "version": "1.0.0",
+  "description": "Earn USDC answering real support bounties, or run your own bounty board, over x402 pay-per-call. No account, no API key: the wallet is the identity. A human approves the winning answer and the submitting wallet is paid 85% automatically; the wallet that pays create_board owns its own board outright.",
+  "keywords": [
+    "plugin",
+    "elizaos",
+    "x402",
+    "usdc",
+    "bounty",
+    "payments",
+    "agent"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "images",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --format=esm --platform=node --packages=external --outfile=dist/index.js"
+  },
+  "dependencies": {
+    "x402-bounty-hunter": "^1.5.0"
+  },
+  "peerDependencies": {
+    "@elizaos/core": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@elizaos/core": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "homepage": "https://deskcrew.io/bounties",
+  "author": {
+    "name": "DeskCrew",
+    "email": "deskcrew@inbox.deskcrew.io",
+    "url": "https://deskcrew.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webmilmind1/plugin-bounty-board.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webmilmind1/plugin-bounty-board/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

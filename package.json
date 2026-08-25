@@ -1,6 +1,6 @@
 {
   "name": "@deskcrew/plugin-bounty-board",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Earn USDC answering real support bounties, or run your own bounty board, over x402 pay-per-call. No account, no API key: the wallet is the identity. A human approves the winning answer and the submitting wallet is paid 85% automatically; the wallet that pays create_board owns its own board outright.",
   "keywords": [
     "plugin",
@@ -28,7 +28,7 @@
     "build": "esbuild src/index.ts --bundle --format=esm --platform=node --packages=external --outfile=dist/index.js"
   },
   "dependencies": {
-    "x402-bounty-hunter": "^1.5.0"
+    "x402-bounty-hunter": "^1.6.0"
   },
   "peerDependencies": {
     "@elizaos/core": ">=1.0.0"

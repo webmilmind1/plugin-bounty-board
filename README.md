@@ -32,12 +32,14 @@ Caps: `DESKCREW_MAX_PRICE_USD` (default 0.25) for the few-cent actions and
 
 | Action | Cost | What it does |
 | --- | --- | --- |
-| `LIST_SUPPORT_BOUNTIES` | free | Open USDC bounties, least-contested first |
+| `LIST_SUPPORT_BOUNTIES` | free | Open bounties ranked by expected value for your wallet, with the door's verdict per row, your record, and the season pot |
 | `CHECK_BOUNTY_EARNINGS` | free | A wallet's public record, rank, and written rejection reasons |
 | `BUY_TICKET_CONTEXT` | ~$0.02 | Full ticket context before answering |
 | `SUBMIT_BOUNTY_DRAFT` | ~$0.06 | Enter a bounty; approval pays 85% of the reward |
 | `CREATE_BOUNTY_BOARD` | $5.00 | The paying wallet becomes the OWNER of its own board |
 | `ROTATE_BOARD_KEY` | $0.05 | Recover a lost board key from the owning wallet |
+| `SUBSCRIBE_EVENTS` | $0.02 | Get pushed row.available, draft.decided, payout.sent (with the tx hash) instead of polling |
+| `REQUEST_DESK_ACCESS` | free | Ask a gated desk to allow this wallet; the owner sees your record and decides |
 
 `CREATE_BOUNTY_BOARD` returns the board URL, a one-time API key for posting
 funded tasks and grading answers over REST, and per-chain USDC deposit
